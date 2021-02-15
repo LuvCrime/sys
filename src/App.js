@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import 'normalize.css';
+import "./App.scss";
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.divToFocus = React.createRef();
+  }
+  render() {
+    return (
+      <div className="App">
+        <div className="wrapper">
+          <div className="header">
+            <div className="header-logo">
+              <div className="logo"></div>
+              <div className="company-name">
+              <span className="bla">BLA BLA</span>
+              <span className="subtitle">One Page Flat Template</span>
+              </div>
+            </div>
+            <div className="navbar">
+
+            </div>
+          </div>
+          <div className="brand"></div>
+          <div className="portfolio"></div>
+          <div className="about-us"></div>
+          <div className="contacts"></div>
+          <div className="footer"></div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
