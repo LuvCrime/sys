@@ -20,7 +20,12 @@ class App extends React.Component {
               </div>
             </div>
             <div className="navbar">
-
+              <ul className="navbar-items">
+                <li><a href="#" className="navbar-item-link">home</a></li>
+                <li><a href="#" className="navbar-item-link">portfolio</a></li>
+                <li><a href="#" className="navbar-item-link">about</a></li>
+                <li><a href="#" className="navbar-item-link">contact</a></li>
+              </ul>
             </div>
           </div>
           <div className="brand"></div>
